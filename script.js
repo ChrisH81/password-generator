@@ -31,19 +31,19 @@ function generatePassword() {
 
   while (!includeLower && !includeUpper && !numeric && !special) {
     let includeLowerPrompt = prompt("Would you like to include lower case letters? enter yes or no", "");
-    if (includeLowerPrompt === "yes") {
+    if (includeLowerPrompt.toLowerCase === "yes") {
       includeLower = true;
     }
     let includeUpperPrompt = prompt("Would you like to include upper case letters? enter yes or no", "");
-    if (includeUpperPrompt === "yes") {
+    if (includeUpperPrompt.toLowerCase === "yes") {
       includeUpper = true;
     }
     let numericPrompt = prompt("Would you like to include numeric symbols? enter yes or no", "");
-    if (numericPrompt === "yes") {
+    if (numericPrompt.toLowerCase=== "yes") {
       numeric = true;
     }
     let specialPrompt = prompt("Would you like to include special characters? enter yes or no", "");
-    if (specialPrompt === "yes") {
+    if (specialPrompt.toLowerCase === "yes") {
       special = true;
     }
     if (!includeLower && !includeUpper && !numeric && !special) {
